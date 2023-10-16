@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Calculator</title>
 </head>
-<body>
+<body>        
+    <h1 class="heading">Calculator</h1>
     <div class="calculator">
         <input type="text" id="display" readonly>
         <div class="buttons">
@@ -30,6 +31,14 @@
             <button onclick="calculateSquareRoot()">√</button>
             <button onclick="calculateExponentiation()">^</button>
             <button onclick="backspace()">&#8592;</button>
+            <button onclick="appendToDisplay('tan(')">tan</button>
+            <button onclick="appendToDisplay('log(')">log</button>
+            <button onclick="appendToDisplay('sin(')">sin</button>
+            <button onclick="appendToDisplay('cos(')">cos</button>
+            <button onclick="appendToDisplay('Math.PI')">π</button>
+            <button onclick="appendToDisplay('Math.E')">e</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
         </div>
     </div>
     <script src="script.js"></script>
